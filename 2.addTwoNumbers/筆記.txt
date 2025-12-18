@@ -1,0 +1,6 @@
+做linklist 時要先指定next=new類別 ()
+不要直接next 否則原本參考 會參考不到
+ex listnode l3=new listnode();
+     listnode l4=l3;
+     l3.next=newlistnode();
+     l3=l3.next;((不能先這行 否則l4參考不到))
