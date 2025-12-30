@@ -1,5 +1,8 @@
 class Solution {
 public:
+    // 同樣可以用之前的 1 << i & num num為(1~n) i為0~31 不過需要nlogn
+    // num & num-1 同樣nlogn
+    // 這邊使用dp 只需要 n
     vector<int> countBits(int n) {
         // 輸入 n=4 要check 0~4
         vector<int> dp(n + 1);
